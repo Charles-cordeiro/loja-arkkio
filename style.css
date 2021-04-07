@@ -44,7 +44,7 @@
 .pesquisa input{
     width: 450px;
     border: 1px solid #aaa;
-    border-radius: 30px;
+    border-radius: 17px;
     padding: 8px 8px 8px 15px;
     font-size: 1.06rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -97,6 +97,9 @@
     color: #fff;
     border: 0.13rem solid #ccc;
 }
+.cadastro .btnCadastro:focus{
+    outline: none;
+}
 .cabecalho_menu{
     display: flex;
     justify-content: flex-start;
@@ -126,6 +129,8 @@
 }
 .sidebar ul a{
     display: block;
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #000;
     height: 100%;
     width: 100%;
@@ -160,9 +165,10 @@ label #cancel{
     left: -251px;
     top: 20px;
     font-size: 20px;
-    border: 2px solid #000;
+    border: 2px solid #aaa;
     color: #f00;
     padding: 5px;
+    border-radius: 10px;
 }
 #check:checked ~ .sidebar{
     transition: ease-in-out 0.5s;
@@ -186,6 +192,10 @@ label #cancel{
 }
 .navbar ul li a{
     font-family: 'Tajawal', sans-serif;
-    padding: 10px;
+    margin: 10px;
     font-weight: 300;
+    font-size: 1.05rem;
+}
+.navbar ul li a:hover{
+    text-decoration: underline #f00;
 }
