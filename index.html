@@ -16,7 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.theme.css">
+    <link rel="stylesheet" href="css/gallery.min.css">
     
 
     <title>Arkkio - Sua loja online</title>
@@ -28,9 +30,18 @@
                 <img src="imagens/logo-arkkio-oficial.png" alt="logo do site">
             </div>
             <div class="pesquisa">
-                <label for="txtpesquisa">
-                    <i class="fa fa-search"></i><input type="text" name="txtpesquisa" id="txtpesquisa" placeholder="Pesquisa...">
-                </label>
+                <form>
+                    <input type="text" name="txtpesquisa" id="txtpesquisa" placeholder="O que você deseja?" list="top">
+                    <i class="fa fa-search"></i>
+
+                    <datalist id="top">
+                        <option value="Geladeira"></option>
+                        <option value="Celular LG"></option>
+                        <option value="Celular samsung"></option>
+                        <option value="Mesa"></option>
+                        <option value="Televisão"></option>
+                    </datalist>
+                </form>
             </div>
             <div class="cadastro">
                 <label for="btnlogin">
@@ -45,7 +56,7 @@
         <div class="cabecalho_menu">
             <input type="checkbox" id="check">
             <label for="check">
-                <i class="fa fa-bars" id="btn"></i>
+                <i class="fa fa-navicon" id="btn"></i>
                 <i class="fa fa-close" id="cancel"></i>
             </label>
             <div class="sidebar">
@@ -71,7 +82,46 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <section class="banner">
+            <div class="gallery autoplay items-2" id="gallery">
+                <div id="item-1" class="control-operator"></div>
+                <div id="item-2" class="control-operator"></div>
+        
+                <figure class="item">
+                    <h1><img src="imagens/banner-1.jpg" alt="banner"></h1>
+                </figure>
+                <figure class="item">
+                    <h1><img src="imagens/banner-2.jpg" alt="banner"></h1>
+                </figure>
+        
+                <div class="controls">
+                    <a href="#item-1" class="control-button"><i class="fa fa-genderless"></i></a>
+                    <a href="#item-2" class="control-button"><i class="fa fa-genderless"></i></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="about">
+                <div>
+                    <i id="icone1" class="fa fa-car"></i>
+                    <p>FRETE GRÁTIS PARA VIÇOSA DO CEARÁ</p>
+                </div>
+                <div>
+                    <i id="icone2" class="fa fa-calendar"></i>
+                    <p>ENTREGA NO MESMO DIA DA COMPRA</p>
+                </div>
+                <div>
+                    <i id="icone3" class="fa fa-briefcase"></i>
+                    <p>GRANDE VARIEDADE DE PRODUTOS</p>
+                </div>
+                <div>
+                    <i id="icone4" class="fa fa-dashboard"></i>
+                    <p>MELHOR PREÇO DA REGIÃO</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
