@@ -244,3 +244,32 @@ label #cancel{
     font-size: 1.05rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.secao_produtos{
+    display: grid;
+    background-color: #cbe9f3;
+    padding: 100px 0px 100px 0px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.secao_produtos div{
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(124, 154, 163, 0.453);
+}
+.secao_produtos div:hover{
+    box-shadow: 3px 3px 10px rgba(124, 154, 163, 0.600);
+}
+.celular p{
+    height: 40px;
+    font-family: 'Ramabhadra', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.celular img{
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 0px 0px 10px 10px;
+}
