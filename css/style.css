@@ -189,7 +189,7 @@ label #cancel{
     left: 252px;
 }
 .navbar{
-    margin-left: 50px;
+    margin-left: 200px;
 }
 .navbar ul{
     display: flex;
@@ -204,7 +204,7 @@ label #cancel{
     text-decoration: underline #f00;
 }
 .navbar ul li i{
-    margin: 0px 15px 0px 3px;
+    margin: 0px 35px 0px 3px;
     font-size: 0.9rem;
 }
 
@@ -219,10 +219,23 @@ label #cancel{
     font-size: 0.8rem;
     margin-left: 10px;
 }
+.introducao{
+    height: 50px;
+    margin-top: 1px;
+    background-color: #4d87e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.introducao p{
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 300px;
+    height: 350px;
     background-color: #f5f5f5;
 }
 .about div{
@@ -232,7 +245,7 @@ label #cancel{
     margin: auto;
     width: 300px;
     height: 150px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 20px;
     background-color: #fff;
 }
@@ -353,4 +366,113 @@ label #cancel{
     font-family: 1.2rem;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+    /* CABECALHO */
+    .cabecalho_inicial{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo img{
+        width: 130px;
+        height: auto;
+    }
+    .cabecalho_inicial .pesquisa form input{
+        width: 200px;
+        padding: 8px;
+    }
+    .cabecalho_inicial .pesquisa form i{
+        width: 35px;
+        height: 38px;
+        transform: translate(-4px, 2px);
+    }
+    .cabecalho_inicial .cadastro{
+        display: none;
+    }
+    .cabecalho_menu .navbar{
+        display: none;
+    }
+    /* MAIN */
+    #gallery figure h1 img{
+        width: 100%;
+        height: auto;
+    }
+    .introducao{
+        height: 80px;
+        width: 100%;
+    }
+    .introducao p{
+        text-align: center;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 780px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .about div{
+        width: 60%;
+        margin: auto;
+    }
+    .about div p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .secao_produtos{
+        display: flex;
+        flex-direction: column;
+    }
+    .secao_produtos a div{
+        width: 70%;
+        height: 400px;
+        margin-bottom: 60px;
+    }
+    .secao_produtos a div img{
+        width: 100%;
+        height: 360px;
+    }
+    .secao_produtos a div p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
+    /* RODAPE */
+    .rodape{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .sobre{
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+    }
+    .links{
+        width: 100%;
+        padding: 60px 10px 0px 10px;
+    }
+    .redes-sociais{
+        width: 100%;
+        padding: 60px 10px 40px 10px;
+    }
+    .copyright{
+        display: inline-block;
+        height: 100px;
+    }
+    .copyright .copy{
+        display: inline-block;
+    }
+    .copyright .copy p{
+        text-align: center;
+        padding-top: 25px;
+    }
 }
