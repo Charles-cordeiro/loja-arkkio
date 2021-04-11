@@ -425,6 +425,18 @@ label #cancel{
         display: none;
     }
     .cabecalho_menu .navbar{
+        overflow: auto;
+        transform: translateX(-100px);
+    }
+    .cabecalho_menu .nav
+    .cabecalho_menu .navbar ul li{
+        padding: 10px;
+    }
+    .cabecalho_menu .navbar ul li a{
+        display: flex;
+        flex-direction: row;
+    }
+    .cabecalho_menu .navbar ul li i{
         display: none;
     }
     /* MAIN */
