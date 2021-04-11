@@ -94,10 +94,16 @@
                 <div id="item-2" class="control-operator"></div>
         
                 <figure class="item">
-                    <h1><img src="imagens/banner-1.png" alt="banner"></h1>
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="imagens/banner-1-p.png" type="image/png">
+                        <source media="(max-width: 1000px)" srcset="imagens/banner-1-m.png" type="image/png">
+                        <img src="imagens/banner-1-g.png" alt="banner">
+                    </picture>
                 </figure>
                 <figure class="item">
-                    <h1><img src="imagens/banner-2.jpg" alt="banner"></h1>
+                    <source media="(max-width: 768px)" srcset="imagens/banner-2-p.png" type="image/png">
+                    <source media="(max-width: 1000px)" srcset="imagens/banner-2-m.png" type="image/png">
+                    <img src="imagens/banner-2-g.jpg" alt="banner">
                 </figure>
         
                 <div class="controls">
