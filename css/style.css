@@ -424,13 +424,30 @@ label #cancel{
     .cabecalho_inicial .cadastro span{
         display: none;
     }
-    .cabecalho_menu .navbar{
+    .cabecalho_menu{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
         overflow: auto;
-        transform: translateX(-100px);
     }
-    .cabecalho_menu .nav
+    label #btn{
+        color: #000;
+        font-size: 20px;
+        z-index: 1;
+        position: absolute;
+        top: 98px;
+        left: 5px;
+    }
+    .cabecalho_menu .navbar{
+        display: flex;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        height: auto;
+        padding: 0px 40px;
+        transform: translateX(120px);
+    }
     .cabecalho_menu .navbar ul li{
-        padding: 10px;
+        padding: 5px 10px;
     }
     .cabecalho_menu .navbar ul li a{
         display: flex;
