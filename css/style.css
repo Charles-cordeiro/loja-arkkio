@@ -396,7 +396,7 @@ label #cancel{
         justify-content: flex-end;
     }
     .cabecalho_inicial .pesquisa form input{
-        width: 150px;
+        width: 130px;
         padding: 6px;
     }
     .cabecalho_inicial .pesquisa form i{
@@ -429,13 +429,11 @@ label #cancel{
     }
     .introducao{
         height: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px;
         width: 100%;
     }
     .introducao p{
         text-align: center;
-        padding: 5px;
     }
     .about{
         display: flex;
