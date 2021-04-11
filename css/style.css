@@ -372,11 +372,7 @@ label #cancel{
 }
 
 /* MOBILE */
-@media (min-width:400px) and (max-width: 767px) {
-    .cabecalho_inicial .pesquisa form input{
-        width: 120px;
-    }
-}
+
 @media (max-width:768px){
     /* CABECALHO */
     .cabecalho_inicial{
@@ -400,7 +396,7 @@ label #cancel{
         justify-content: flex-end;
     }
     .cabecalho_inicial .pesquisa form input{
-        width: 170px;
+        width: 150px;
         padding: 6px;
     }
     .cabecalho_inicial .pesquisa form i{
