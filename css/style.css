@@ -428,7 +428,7 @@ label #cancel{
         display: flex;
         width: 100%;
         flex-direction: column-reverse;
-        overflow: auto;
+        overflow: auto; 
     }
     label #btn{
         color: #000;
