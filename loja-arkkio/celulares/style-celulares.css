@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset  "utf-8";
 
 /* RESET */
 *{
@@ -214,88 +214,84 @@ label #cancel{
     margin: 0px 35px 0px 3px;
     font-size: 0.9rem;
 }
-
 /* MAIN */
-#gallery img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-#gallery .controls .control-button i{
-    color: #fa605d;
-    font-size: 0.8rem;
-    margin-left: 10px;
-}
-.introducao{
-    height: 50px;
-    margin-top: 1px;
-    background-color: #4d87e2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.introducao p{
-    color: #fff;
-    font-size: 1.1rem;
-    font-family: 'Times New Roman', Times, serif;
-}
-.about{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 350px;
-    background-color: #f5f5f5;
-}
-.about div{
-    display: grid;
-    place-items: center;
-    place-content: center;
-    margin: auto;
-    width: 300px;
-    height: 150px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background-color: #fff;
-}
-.about div i{
-    color: #fa605d;
+main h1{
+    padding: 30px 0px 0px 50px;
+    font-family: 'PT Sans', sans-serif;
     font-size: 2.5rem;
-    margin-bottom: 10px;
 }
-.about div p{
-    text-align: center;
-    width: 80%;
-    font-size: 1.05rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+main .subtitulo{
+    padding: 0px 52px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
 }
 .secao_produtos{
     display: grid;
-    background-color: #cbe9f3;
-    padding: 100px 0px 40px 0px;
     grid-template-columns: repeat(3, 1fr);
+    padding: 40px 0px;
 }
 .secao_produtos div{
     width: 350px;
-    height: 450px;
-    background-color: #fff;
+    height: 320px;
     margin: auto;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 7px rgba(124, 154, 163, 0.453);
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fa605d;
 }
-.secao_produtos div:hover{
-    box-shadow: 3px 3px 10px rgba(124, 154, 163, 0.600);
+.secao_produtos div img{
+    display: flex;
+    width: 200px;
+    margin: auto;
+    height: auto;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.secao_produtos div img:hover{
+    transform: scale(1.03);
 }
 .secao_produtos p{
-    height: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-weight: 600;
+    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.05rem;
+    font-weight: 600;
 }
-.secao_produtos img{
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 10px 10px 0px 0px;
+.secao_produtos span{
+    color: #a28a02;
+    font-size: 1.1rem;
+}
+.secao_produtos div span span{
+    font-size: 1.2rem;
+}
+/* Pra preencher o espaçamento e redimensionar tamanho */
+#galaxya01{
+    margin-bottom: 5px;
+}
+#galaxya10s{
+    margin-bottom: 20px;
+    width: 220px;
+}
+#galaxya30{
+    width: 180px;
+    margin-bottom: 25px;
+}
+#lg41s{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 180px;
+}
+#lgk8{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#sempgo{
+    width: 190px;
+}
+/* Pra preencher o espaçamento e redimensionar tamanho */
+.secao_produtos div .mobile{
+    display: none;
 }
 /* FOOTER */
 .rodape{
@@ -377,9 +373,8 @@ label #cancel{
     color: #fff;
 }
 
-/* MOBILE */
-
-@media (max-width:768px){
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
     /* CABECALHO */
     .cabecalho_inicial{
         display: flex;
@@ -416,7 +411,6 @@ label #cancel{
         width: 20%;
         justify-content: flex-end;
         padding-right: 10px;
-        transform: translate(0px, 3px);
     }
     .cabecalho_inicial .cadastro .btnLogin{
         display: none;
@@ -460,55 +454,46 @@ label #cancel{
         display: none;
     }
     /* MAIN */
-    #gallery figure img{
-        width: 100%;
-        height: 220px;
+    main .secao_produtos{
+        grid-template-columns: 1fr;
+        padding: 10px;
     }
-    .introducao{
+    main .secao_produtos div{
+        display: flex;
+        width: auto;
         height: auto;
-        padding: 20px 10px 20px 10px;
-        width: 100%;
+        align-items: center;
+        justify-content: space-around;
     }
-    .introducao p{
+    main h1{
+        font-size: 2rem;
+        padding: 20px 5px 0px 5px;
+    }
+    main .subtitulo{
+        padding: 0px 5px 50px 8px;
+    }
+    main .secao_produtos div img{
+        width: 120px;
+    }
+    main .secao_produtos div p{
+        display: none;
+    }
+    main .secao_produtos div .mobile{
+        display: flex;
+        font-size: 1rem;
         text-align: center;
     }
-    .about{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 780px;
-        padding: 40px 5px 40px 5px;
+    #galaxya10s{
+        width: 110px;
     }
-    .about div{
-        width: 90%;
-        margin: auto;
+    #galaxya30{
+        width: 100px;
     }
-    .about div p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.9rem;
-        font-weight: 600;
+    #lg41s{
+        width: 130px;
     }
-    .secao_produtos{
-        display: flex;
-        flex-direction: column;
-    }
-    .secao_produtos a div{
-        width: 60%;
-        margin-bottom: 60px;
-        height: auto;
-    }
-    .secao_produtos a div img{
-        width: 100%;
-        height: 250px;
-    }
-    .secao_produtos a div p{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.05rem;
-        font-weight: 600;
+    #sempgo{
+        width: 120px;
     }
     /* RODAPE */
     .rodape{
@@ -543,48 +528,28 @@ label #cancel{
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px){
+@media (min-width: 769px) and (max-width: 1200px) {
     /* HEADER */
     .logo{
         width: 20%;
-    }
-    .cabecalho_inicial .logo img{
-        width: 130px;
     }
     .pesquisa{
         width: 50%;
     }
     .cabecalho_inicial .pesquisa input{
-        width: 300px;
+        width: 360px;
     }
     .cadastro{
         width: 30%;
     }
-    .navbar ul i{
+    .cabecalho_menu .navbar i{
         display: none;
     }
-    .navbar ul li{
-        padding: 0px 12px;
+    .cabecalho_menu .navbar ul li{
+        padding: 10px;
     }
     /* MAIN */
-    .introducao p{
-        text-align: center;
-    }
-    section .about div{
-        width: 180px;
-    }
-    section .about div p {
-        font-size: 1.05rem;
-    }
-    .secao_produtos div{
-        width: 260px;
-    }
-    .secao_produtos div img{
-        width: 260px;
-        height: 400px;
-    }
-    .secao_produtos div p{
-        padding: 5px 10px;
-        line-height: 1.15;
+    .secao_produtos {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
