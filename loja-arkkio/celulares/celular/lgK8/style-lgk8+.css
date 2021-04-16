@@ -228,7 +228,7 @@ label #cancel{
     margin-right: 100px;
 }
 .secao_produto div img{
-    width: 380px;
+    width: 450px;
     height: auto;
 }
 .secao_produto .estoque p{
@@ -305,8 +305,8 @@ label #cancel{
 }
 .detalhes .lista ol li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
     font-size: 0.8rem;
+    font-weight: 600;
     line-height: 1.5;
 }
 .secao_produto .informacoes{
@@ -355,8 +355,9 @@ label #cancel{
     font-family: 'Times New Roman', Times, serif;
 }
 /* Apenas para preenchimento */
-.a10{
+#galaxya01{
     transform: translateY(-3px);
+    width: 155px;
 }
 #lg41s{
     width: 155px;
@@ -585,6 +586,9 @@ label #cancel{
     }
     .produtos-semelhantes .items div img{
         width: 120px;
+    }
+    #galaxya01{
+        width: 110px;
     }
     #lg41s{
         width: 110px;
