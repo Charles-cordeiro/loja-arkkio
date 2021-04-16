@@ -294,7 +294,7 @@ label #cancel{
     font-size: 1.5rem;
 }
 .detalhes p{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 0px 40px;
@@ -305,7 +305,7 @@ label #cancel{
 }
 .detalhes .lista ol li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
 }
