@@ -221,6 +221,27 @@ label #cancel{
     padding: 50px 0px 150px 0px;
     height: auto;
 }
+.secao_produto .opcao{
+    display: flex;
+    flex-direction: column;
+}
+.secao_produto .opcao img{
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#frente{
+    border: 2px solid #3d3d3d;
+    padding: 5px;
+    border-radius: 10px;
+}
+#costa{
+    border: 2px solid #3d3d3d;
+    padding: 5px;
+    border-radius: 10px;
+}
 .secao_produto .img{
     width: auto;
     display: flex;
@@ -542,7 +563,19 @@ label #cancel{
     /* MAIN */
     .secao_produto{
         flex-direction: column;
-        padding: 50px 10px;
+        padding: 20px 50px 10px 10px;
+    }
+    .secao_produto .opcao{
+        display: flex;
+    }
+    .secao_produto .opcao img{
+        padding: 5px 5px;
+    }
+    #frente{
+        margin: 5px 0px 10px 5px;
+    }
+    #costa{
+        margin: 0px 5px;
     }
     .secao_produto .comprar{
         width: auto;
@@ -564,7 +597,7 @@ label #cancel{
         height: auto;
     }
     .detalhes h2{
-        padding: 10px 10px;
+        padding: 50px 10px 10px 10px;
         font-size: 1.3rem;
     }
     .detalhes p{
