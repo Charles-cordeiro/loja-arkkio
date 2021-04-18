@@ -336,7 +336,7 @@ label #cancel{
 }
 .secao_produto .informacoes div p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.rem;
+    font-size: 1rem;
     line-height: 2;
     padding: 0px 15px;
 }
@@ -378,9 +378,6 @@ label #cancel{
 /* Apenas para preenchimento */
 #galaxya01{
     transform: translateY(-3px);
-    width: 155px;
-}
-#lg41s{
     width: 155px;
 }
 #lgk8{
@@ -589,12 +586,15 @@ label #cancel{
         font-size: 1.2rem;
     }
     .secao_produto .img{
+        display: flex;
         justify-content: center;
         margin-right: 0px;
     }
     .secao_produto .img img{
-        width: 200px;
+        display: flex;
+        width: 220px;
         height: auto;
+        justify-content: center;
     }
     .detalhes h2{
         padding: 50px 10px 10px 10px;
@@ -602,6 +602,7 @@ label #cancel{
     }
     .detalhes p{
         padding: 0px 10px;
+        font-size: 1rem;
     }
     .detalhes .lista{
         padding: 30px 10px;
@@ -621,9 +622,6 @@ label #cancel{
         width: 120px;
     }
     #galaxya01{
-        width: 110px;
-    }
-    #lg41s{
         width: 110px;
     }
     #lgk8{
