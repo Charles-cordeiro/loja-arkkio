@@ -196,7 +196,7 @@ label #cancel{
     position: fixed;
 }
 .navbar{
-    margin-left: 200px;
+    margin-left: 50px;
 }
 .navbar ul{
     display: flex;
@@ -206,13 +206,10 @@ label #cancel{
     font-family: 'Tajawal', sans-serif;
     font-weight: 700;
     font-size: 1.05rem;
+    margin-left: 30px;
 }
 .navbar ul li a:hover{
     text-decoration: underline #f00;
-}
-.navbar ul li i{
-    margin: 0px 35px 0px 3px;
-    font-size: 0.9rem;
 }
 
 /* MAIN */
@@ -275,7 +272,7 @@ label #cancel{
 }
 .secao_produtos div{
     width: 350px;
-    height: 450px;
+    height: 460px;
     background-color: #fff;
     margin: auto;
     margin-bottom: 40px;
@@ -286,7 +283,7 @@ label #cancel{
     box-shadow: 3px 3px 10px rgba(124, 154, 163, 0.600);
 }
 .secao_produtos p{
-    height: 40px;
+    height: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-weight: 600;
@@ -314,10 +311,9 @@ label #cancel{
     font-family: monospace;
 }
 .sobre p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: monospace;
     padding-top: 20px;
-    font-weight: 550;
 }
 .links{
     width: 25%;
@@ -325,9 +321,8 @@ label #cancel{
 }
 .links ul li a{
     font-family: monospace;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2;
-    font-weight: 550;
 }
 .links ul li a:hover{
     color: #fa605d;
@@ -338,8 +333,7 @@ label #cancel{
 }
 .redes-sociais p{
     font-family: monospace;
-    font-size: 1.3rem;
-    font-weight: 550;
+    font-size: 1.1rem;
 }
 .redes-sociais i{
     font-size: 1.3rem;
@@ -367,12 +361,12 @@ label #cancel{
     justify-content: center;
 }
 .copyright .copy p{
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
 }
 .copyright .copy a{
-    font-family: 1.2rem;
+    font-family: 1.15rem;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
 }
@@ -448,6 +442,7 @@ label #cancel{
         height: auto;
         padding: 0px 40px;
         transform: translateX(120px);
+        margin-left: 0px;
     }
     .cabecalho_menu .navbar ul li{
         padding: 5px 10px;
@@ -455,6 +450,7 @@ label #cancel{
     .cabecalho_menu .navbar ul li a{
         display: flex;
         flex-direction: row;
+        margin-left: 0px;
     }
     .cabecalho_menu .navbar ul li i{
         display: none;
@@ -495,7 +491,7 @@ label #cancel{
     .secao_produtos a div{
         width: 60%;
         margin-bottom: 60px;
-        height: auto;
+        height: 320px;
     }
     .secao_produtos a div img{
         width: 100%;
@@ -509,6 +505,7 @@ label #cancel{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.05rem;
         font-weight: 600;
+        transform: translateY(10px);
     }
     /* RODAPE */
     .rodape{

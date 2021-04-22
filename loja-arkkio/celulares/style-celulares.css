@@ -196,7 +196,7 @@ label #cancel{
     position: fixed;
 }
 .navbar{
-    margin-left: 200px;
+    margin-left: 50px;
 }
 .navbar ul{
     display: flex;
@@ -206,13 +206,10 @@ label #cancel{
     font-family: 'Tajawal', sans-serif;
     font-weight: 700;
     font-size: 1.05rem;
+    margin-left: 30px;
 }
 .navbar ul li a:hover{
     text-decoration: underline #f00;
-}
-.navbar ul li i{
-    margin: 0px 35px 0px 3px;
-    font-size: 0.9rem;
 }
 /* MAIN */
 main h1{
@@ -310,10 +307,9 @@ main .subtitulo{
     font-family: monospace;
 }
 .sobre p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: monospace;
     padding-top: 20px;
-    font-weight: 550;
 }
 .links{
     width: 25%;
@@ -321,9 +317,8 @@ main .subtitulo{
 }
 .links ul li a{
     font-family: monospace;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2;
-    font-weight: 550;
 }
 .links ul li a:hover{
     color: #fa605d;
@@ -334,8 +329,7 @@ main .subtitulo{
 }
 .redes-sociais p{
     font-family: monospace;
-    font-size: 1.3rem;
-    font-weight: 550;
+    font-size: 1.1rem;
 }
 .redes-sociais i{
     font-size: 1.3rem;
@@ -363,7 +357,7 @@ main .subtitulo{
     justify-content: center;
 }
 .copyright .copy p{
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
 }
@@ -442,6 +436,7 @@ main .subtitulo{
         height: auto;
         padding: 0px 40px;
         transform: translateX(120px);
+        margin-left: 0px;
     }
     .cabecalho_menu .navbar ul li{
         padding: 5px 10px;
@@ -449,6 +444,7 @@ main .subtitulo{
     .cabecalho_menu .navbar ul li a{
         display: flex;
         flex-direction: row;
+        margin-left: 0px;
     }
     .cabecalho_menu .navbar ul li i{
         display: none;
