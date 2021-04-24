@@ -215,6 +215,7 @@ label #cancel{
     text-decoration: underline #f00;
 }
 /* MAIN */
+/* MAIN */
 .secao_produto{
     display: flex;
     justify-content: center;
@@ -228,7 +229,7 @@ label #cancel{
     margin-right: 100px;
 }
 .secao_produto div img{
-    width: 450px;
+    width: 380px;
     height: auto;
 }
 .secao_produto .estoque p{
@@ -305,8 +306,8 @@ label #cancel{
 }
 .detalhes .lista ol li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
     font-weight: 600;
+    font-size: 1rem;
     line-height: 1.5;
 }
 .secao_produto .informacoes{
@@ -355,28 +356,8 @@ label #cancel{
     font-family: 'Times New Roman', Times, serif;
 }
 /* Apenas para preenchimento */
-#galaxya01{
-    transform: translateY(-3px);
-    width: 155px;
-}
-#lg41s{
-    width: 155px;
-}
-#lgk8{
-    width: 155px;
-}
-#positivo{
-    width: 150px;
-}
-.txtpositivo{
-    transform: translateY(-10px);
-}
-#sempgo{
-    width: 155px;
-    transform: translateY(-10px);
-}
-.txtsempgo{
-    transform: translateY(-20px);
+#item2{
+    margin-top: 22px;
 }
 /* Apenas para preenchimento */
 /* FOOTER */
@@ -599,21 +580,6 @@ label #cancel{
         padding: 10px 10px;
     }
     .produtos-semelhantes .items div img{
-        width: 120px;
-    }
-    #galaxya01{
-        width: 110px;
-    }
-    #lg41s{
-        width: 110px;
-    }
-    #lgk8{
-        width: 120px;
-    }
-    #positivo{
-        width: 110px;
-    }
-    #sempgo{
         width: 120px;
     }
     /* RODAPE */

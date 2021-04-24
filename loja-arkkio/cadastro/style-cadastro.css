@@ -215,170 +215,11 @@ label #cancel{
     text-decoration: underline #f00;
 }
 /* MAIN */
-.secao_produto{
-    display: flex;
-    justify-content: center;
-    padding: 50px 0px 150px 0px;
-    height: auto;
+.banner img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
-.secao_produto .img{
-    width: auto;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 100px;
-}
-.secao_produto div img{
-    width: 450px;
-    height: auto;
-}
-.secao_produto .estoque p{
-    font-family: 'Tajawal', sans-serif;
-    font-size: 1.1rem;
-    color: #008000;
-    font-weight: 600;
-}
-.secao_produto .comprar{
-    width: 450px;
-    padding-top: 50px;
-}
-.secao_produto .comprar .about p{
-    font-size: 1.35rem;
-    font-family: 'Tajawal', sans-serif;
-    line-height: 1.15;
-    font-weight: 600;
-}
-.secao_produto .comprar .about .txt{
-    color: #000;
-    font-size: 1.05rem;
-    display: inline-block;
-    padding-right: 10px;
-}
-.secao_produto .comprar .about span, .simbolo{
-    display: inline-block;
-    font-size: 1.3rem;
-    color: #fa605d;
-    margin: 5px 0px;
-}
-.secao_produto .comprar .btncomprar{
-    position: relative;
-}
-.secao_produto .comprar .btncomprar a input{
-    background-color: #008000;
-    color: #eee;
-    font-size: 1.2rem;
-    font-weight: 550;
-    font-family: 'Tajawal', sans-serif;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 20px 5px 40px;
-    margin: 10px 0px;
-
-    cursor: pointer;
-}
-.secao_produto .comprar .btncomprar a input:hover{
-    background-color: #039403;
-}
-.secao_produto .comprar .btncomprar a input:focus{
-    outline: none;
-}
-.secao_produto .comprar .btncomprar i{
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    color: #fff;
-    font-size: 1.4rem;
-}
-.detalhes h2{
-    padding: 10px 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.5rem;
-}
-.detalhes p{
-    font-size: 1rem;
-    font-weight: 600;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 0px 40px;
-    line-height: 1.5;
-}
-.detalhes .lista{
-    padding: 20px 60px;
-}
-.detalhes .lista ol li{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-}
-.secao_produto .informacoes{
-    display: flex;
-    margin-top: 30px;
-}
-.secao_produto .informacoes div p{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.rem;
-    line-height: 2;
-    padding: 0px 15px;
-}
-.secao_produto .informacoes div p:nth-child(even){
-    background-color: #eee;
-}
-.produtos-semelhantes{
-    padding: 100px 0px;
-}
-.produtos-semelhantes h2{
-    font-family: 1.7rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px 30px;
-}   
-.secao_produto .informacoes .item p{
-    font-weight: 600;
-    padding-right: 20px;
-}
-.produtos-semelhantes .items{
-    display: flex;
-}
-.produtos-semelhantes .items div{
-    padding: 10px 20px;
-}
-.produtos-semelhantes div img{
-    width: 180px;
-    height: auto;
-}
-.produtos-semelhantes .items div p{
-    color: #ba3c3a;
-    text-align: left;
-    font-weight: 500;
-}
-.produtos-semelhantes .items div p span{
-    color: #a01917;
-    font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
-}
-/* Apenas para preenchimento */
-#galaxya01{
-    transform: translateY(-3px);
-    width: 155px;
-}
-#lg41s{
-    width: 155px;
-}
-#lgk8{
-    width: 155px;
-}
-#positivo{
-    width: 150px;
-}
-.txtpositivo{
-    transform: translateY(-10px);
-}
-#sempgo{
-    width: 155px;
-    transform: translateY(-10px);
-}
-.txtsempgo{
-    transform: translateY(-20px);
-}
-/* Apenas para preenchimento */
 /* FOOTER */
 .rodape{
     display: flex;
@@ -451,7 +292,7 @@ label #cancel{
     color: #fff;
 }
 .copyright .copy a{
-    font-family: 1.2rem;
+    font-family: 1.15rem;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
 }
@@ -465,7 +306,9 @@ label #cancel{
     font-family: 'Times New Roman', Times, serif;
 }
 
-@media (max-width: 768px) {
+/* MOBILE */
+
+@media (max-width:768px){
     /* CABECALHO */
     .cabecalho_inicial{
         display: flex;
@@ -507,10 +350,10 @@ label #cancel{
     .cabecalho_inicial .cadastro .btnLogin{
         display: none;
     }
-    .cabecalho_inicial .cadastro .btnCadastro{
+    .cabecalho_inicial .cadastro .desktop{
         display: none;
     }
-    .cabecalho_inicial .cadastro .desktop{
+    .cabecalho_inicial .cadastro .btnCadastro{
         display: none;
     }
     .cabecalho_inicial .cadastro .mobile{
@@ -554,67 +397,8 @@ label #cancel{
         display: none;
     }
     /* MAIN */
-    .secao_produto{
-        flex-direction: column;
-        padding: 50px 10px;
-    }
-    .secao_produto .comprar{
-        width: auto;
-    }
-    .secao_produto .comprar .about p{
-        width: auto;
-        padding: 0px;
-        font-size: 1.2rem;
-    }
-    .secao_produto .comprar .about span, .simbolo{
-        font-size: 1.2rem;
-    }
-    .secao_produto .img{
-        justify-content: center;
-        margin-right: 0px;
-    }
-    .secao_produto .img img{
-        width: 200px;
-        height: auto;
-    }
-    .detalhes h2{
-        padding: 10px 10px;
-        font-size: 1.3rem;
-    }
-    .detalhes p{
-        padding: 0px 10px;
-    }
-    .detalhes .lista{
-        padding: 30px 10px;
-    }
-    .produtos-semelhantes h2{
-        font-size: 1.3rem;
-        padding: 10px 10px;
-    }
-    .produtos-semelhantes .items{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .produtos-semelhantes .items div{
-        padding: 10px 10px;
-    }
-    .produtos-semelhantes .items div img{
-        width: 120px;
-    }
-    #galaxya01{
-        width: 110px;
-    }
-    #lg41s{
-        width: 110px;
-    }
-    #lgk8{
-        width: 120px;
-    }
-    #positivo{
-        width: 110px;
-    }
-    #sempgo{
-        width: 120px;
+    .banner img{
+        height: 150px;
     }
     /* RODAPE */
     .rodape{
@@ -649,30 +433,48 @@ label #cancel{
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px){
+    /* HEADER */
     .logo{
         width: 20%;
     }
-    .pesquisa{
-        width: 55%;
+    .cabecalho_inicial .logo img{
+        width: 130px;
     }
-    .cabecalho_inicial .pesquisa form input{
+    .pesquisa{
+        width: 50%;
+    }
+    .cabecalho_inicial .pesquisa input{
         width: 300px;
     }
     .cadastro{
-        width: 25%;
+        width: 30%;
     }
-    .navbar{
-        overflow: auto;
-    }
-    .navbar ul li{
-        padding: 8px;
-    }
-    .navbar ul li i{
+    .navbar ul i{
         display: none;
     }
-    .produtos-semelhantes .items{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+    .navbar ul li{
+        padding: 0px 12px;
+    }
+    /* MAIN */
+    .introducao p{
+        text-align: center;
+    }
+    section .about div{
+        width: 180px;
+    }
+    section .about div p {
+        font-size: 1.05rem;
+    }
+    .secao_produtos div{
+        width: 260px;
+    }
+    .secao_produtos div img{
+        width: 260px;
+        height: 400px;
+    }
+    .secao_produtos div p{
+        padding: 5px 10px;
+        line-height: 1.15;
     }
 }

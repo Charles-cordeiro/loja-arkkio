@@ -63,6 +63,9 @@
     width: 25%;
     align-items: center;
 }
+.cadastro .mobile{
+    display: none;
+}
 .cadastro span{
     color: #aaa;
     margin-right: 20px;
@@ -505,6 +508,12 @@ label #cancel{
     }
     .cabecalho_inicial .cadastro .btnCadastro{
         display: none;
+    }
+    .cabecalho_inicial .cadastro .desktop{
+        display: none;
+    }
+    .cabecalho_inicial .cadastro .mobile{
+        display: flex;
     }
     .cabecalho_inicial .cadastro span{
         display: none;
