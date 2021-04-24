@@ -262,44 +262,17 @@ main .subtitulo{
 .secao_produtos div span span{
     font-size: 1.2rem;
 }
-.cnpj{
-    background-color: #f5f5f5;
-    padding: 10px 0px;
+/* Apenas para preenchimento */
+#pranchaGamaItaly{
+    margin-top: 40px;
 }
-.cnpj p{
-    padding: 0px 10px;
-    font-size: 0.9rem;
-    font-family: 'Times New Roman', Times, serif;
+#pranchaMalloryDivinis{
+    margin-top: 50px;
 }
-
-/* Pra preencher o espaçamento e redimensionar tamanho */
-#galaxya01{
-    margin-bottom: 5px;
+#pranchaTaiff{
+    margin-top: 63px;
 }
-#galaxya10s{
-    margin-bottom: 20px;
-    width: 220px;
-}
-#galaxya30{
-    width: 180px;
-    margin-bottom: 25px;
-}
-#lg41s{
-    margin-top: 10px;
-    margin-bottom: 15px;
-    width: 180px;
-}
-#lgk8{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-#sempgo{
-    width: 190px;
-}
-/* Pra preencher o espaçamento e redimensionar tamanho */
-.secao_produtos div .mobile{
-    display: none;
-}
+/* Apenas para preenchimento */
 /* FOOTER */
 .rodape{
     display: flex;
@@ -375,6 +348,15 @@ main .subtitulo{
     font-family: 1.2rem;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
+}
+.cnpj{
+    background-color: #f5f5f5;
+    padding: 10px 0px;
+}
+.cnpj p{
+    padding: 0px 10px;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* MEDIA QUERIES */
@@ -470,6 +452,7 @@ main .subtitulo{
         height: auto;
         align-items: center;
         justify-content: space-around;
+        width: 300px;
     }
     main h1{
         font-size: 2rem;
@@ -481,25 +464,10 @@ main .subtitulo{
     main .secao_produtos div img{
         width: 120px;
     }
-    main .secao_produtos div p{
-        display: none;
-    }
     main .secao_produtos div .mobile{
         display: flex;
         font-size: 1rem;
         text-align: center;
-    }
-    #galaxya10s{
-        width: 110px;
-    }
-    #galaxya30{
-        width: 100px;
-    }
-    #lg41s{
-        width: 130px;
-    }
-    #sempgo{
-        width: 120px;
     }
     /* RODAPE */
     .rodape{
