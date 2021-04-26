@@ -12,6 +12,11 @@
 
     <!-- FONTES EXTERNAS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style-cadastro.css">
     <title>Arkkio | Cadastro</title>
@@ -23,17 +28,9 @@
                 <img src="../../imagens/logo-arkkio-oficial.png" alt="logo do site">
             </div>
             <div class="pesquisa">
-                <form>
-                    <input type="text" name="txtpesquisa" id="txtpesquisa" placeholder="Pesquise..." list="top">
-                    <i class="fa fa-search"></i>
-
-                    <datalist id="top">
-                        <option value="Geladeira"></option>
-                        <option value="Celular LG"></option>
-                        <option value="Celular samsung"></option>
-                        <option value="Mesa"></option>
-                        <option value="Televisão"></option>
-                    </datalist>
+                <form action="#" method="POST">
+                    <input type="text" name="txtpesquisa" id="txtpesquisa" placeholder="Pesquise..." required>
+                    <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <div class="cadastro">

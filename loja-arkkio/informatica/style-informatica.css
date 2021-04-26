@@ -38,10 +38,9 @@
     font-size: 1.2rem;
     color: #eee;
     background-color: rgb(204, 3, 3);
-    height: 37px;
-    padding: 10px 15px 11px 10px;
-    transform: translate(-4px, 3px);
     border-radius: 0px 10px 10px 0px;
+    padding: 9px 10px;
+    transform: translate(-4px, 2px);
 }
 .pesquisa i:hover{
     cursor: pointer;
@@ -57,6 +56,10 @@
 .pesquisa input:focus{
     outline: none;
     border: 1px solid rgb(204, 3, 3);
+}
+.pesquisa button[type="submit"]{
+    border: none;
+    background-color: #f5f5f5;
 }
 .cadastro{
     display: flex;
@@ -390,7 +393,7 @@ main .subtitulo{
     .cabecalho_inicial .pesquisa form i{
         width: 35px;
         height: 34px;
-        transform: translate(-4px, 0.23rem);
+        transform: translate(-4px, 3px);
     }
     .cabecalho_inicial .cadastro{
         display: flex;
