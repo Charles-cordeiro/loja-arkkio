@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style-cadastro.css">
@@ -55,14 +56,14 @@
                 <ul class="sidebar_lista">
                     <li><a href="../../index.html"><i class="fa fa-qrcode fa-1.5x"></i>Home</a></li>
                     <li><a href="#"><i class="fa fa-line-chart fa-1.5x"></i>Promoções</a></li>
-                    <li><a href="#"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
+                    <li><a href="../sobre/sobre.html"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
                     <li><a href="#"><i class="fa fa-wrench fa-1.5x"></i>Serviços/Atendimentos</a></li>
                     <li><a href="#"><i class="fa fa-envelope fa-1.5x"></i>Contato</a></li>
                 </ul>
             </div>
             <div class="navbar">
                 <ul>
-                    <li><a href="#" target="_self" rel="internal">Eletrodomésticos</a></li>
+                    <li><a href="../eletrodomesticos/eletrodomesticos.html" target="_self" rel="internal">Eletrodomésticos</a></li>
                     <li><a href="../celulares/celulares.html" target="_self" rel="internal">Celulares</a></li>
                     <li><a href="..//beleza/beleza.html" target="_self" rel="internal">Beleza</a></li>
                     <li><a href="../informatica/informatica.html" target="_self" rel="internal">Informática</a></li>
@@ -78,7 +79,31 @@
                 <source media="(min-width: 769px) and (max-width: 1400px)" srcset="background-g.jpg" type="image/jpg">
                 <img src="background-full.jpg" alt="banner">
             </picture>
+            <h2>CADASTRE-SE</h2>
         </div>
+        <section class="cadastro-secao">
+            <section class="cadastro-header">
+                <h2>Loja Arkkio</h2>
+                <p>Olá, para receber novidades, promoções, cupons de descontos, lançamentos e muitos mais, cadastre-se em nossa loja, não demora nada e seus dados estarão 100% protegidos.</p>
+            </section>
+                <form class="cadastro-form" action="">
+                    <header>PREENCHA OS DADOS</header>
+                    <label for="txtname">
+                        <input type="text" name="txtname" id="txtname" placeholder="NOME">
+                    </label>
+                    <label for="txtemail">
+                        <input type="email" name="txtemail" id="txtemail" placeholder="EMAIL">
+                    </label>
+                    <label for="txtpass">
+                        <input type="password" name="txtpass" id="txtpass" placeholder="SENHA">
+                    </label>
+                    <input id="inputSubmit" type="submit" value="CADASTRAR">
+                    <p>
+                        Se já possui uma conta, <a href="../login/login.html">clique aqui!</a>
+                    </p>
+                </form>
+            </section>
+        </section>
     </main>
     <footer>
         <section class="rodape">
@@ -88,29 +113,32 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Ouvidoria</a></li>
-                    <li><a href="">Termos e políticas</a></li>
+                    <li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../ouvidoria/ouvidoria.html">Ouvidoria</a></li>
+                    <li><a href="../termos&politicas/termosPolitica.html">Termos e políticas</a></li>
                     <li><a href="">Serviços/Atendimentos</a></li>
                     <li><a href="">Perguntas frequentes</a></li>
                 </ul>
             </div>
             <div class="redes-sociais">
                 <p>Para mais novidades, siga nossas redes sociais!</p>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-telegram"></i></a>
-                <a href=""><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/arkkiobrasil/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/arkkiobrasil"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://wa.me/5588992529288"><i class="fa fa-whatsapp"></i></a>
             <div>
         </section>
         <section class="copyright">
             <div class="copy">
-                <p>Todos os direitos reservados ao grupo Arkkio &copy;. Site construido por <a href="https://erickbalbino.github.io/portfolio-atualizado">Erick Systems</a> 2021.</p>
+                <p>Todos os direitos reservados ao grupo Arkkio &copy;. Site construido por <a href="https://erickbalbino.github.io/portfolio">Erick Systems</a> 2021.</p>
             </div>
         </section>
         <section class="cnpj">
             <p>ARKKIO - CNPJ: 41.672.762/0001-11</p>
         </section>
     </footer>
+    
+    <script>
+        alert("A função de cadastro não está disponível no momento, mas ela não é necessária para realizar as compras!")
+    </script>
 </body>
 </html>

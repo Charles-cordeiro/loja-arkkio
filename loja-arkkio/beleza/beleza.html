@@ -33,7 +33,7 @@
             </div>
             <div class="pesquisa">
                 <form action="#" method="POST">
-                    <input type="text" name="txtpesquisa" id="txtpesquisa" placeholder="Pesquise..." required>
+                    <input type="text" name="txtpesquisa" id="txtpesquisa" placeholder="Pesquise..." required onclick="clicar()">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -59,14 +59,14 @@
                 <ul class="sidebar_lista">
                     <li><a href="../../index.html"><i class="fa fa-qrcode fa-1.5x"></i>Home</a></li>
                     <li><a href="#"><i class="fa fa-line-chart fa-1.5x"></i>Promoções</a></li>
-                    <li><a href="#"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
+                    <li><a href="../sobre/sobre.html"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
                     <li><a href="#"><i class="fa fa-wrench fa-1.5x"></i>Serviços/Atendimentos</a></li>
                     <li><a href="#"><i class="fa fa-envelope fa-1.5x"></i>Contato</a></li>
                 </ul>
             </div>
             <div class="navbar">
                 <ul>
-                    <li><a href="#" target="_self" rel="internal">Eletrodomésticos</a></li>
+                    <li><a href="../eletrodomesticos/eletrodomesticos.html" target="_self" rel="internal">Eletrodomésticos</a></li>
                     <li><a href="../celulares/celulares.html" target="_self" rel="internal">Celulares</a></li>
                     <li><a href="beleza.html" target="_self" rel="internal">Beleza</a></li>
                     <li><a href="../informatica/informatica.html" target="_self" rel="internal">Informática</a></li>
@@ -104,6 +104,46 @@
                 </p>
                <span><span class="simbolo">R$</span>150,00</span>
             </div>
+            <!-- PRODUTO 4 -->
+            <div>
+                <a href="secadorGamaLigthCeramic/secadorGamaLight.html" target="_self" rel="internal"><img id="secadorGamaLight" src="imagens/secador-gama-light-ceramic.jpeg" alt="secador de cabelo"></a>
+                <p>
+                    Secador de Cabelo Gama Light Ceramic Ion
+                </p>
+               <span><span class="simbolo">R$</span>200,00</span>
+            </div>
+            <!-- PRODUTO 5 -->
+            <div>
+                <a href="secadorMalloryTravel/secadorMalloryTravel.html" target="_self" rel="internal"><img id="secadorMalloryTravel" src="imagens/secador-mallory-travel.jpeg" alt="secador de cabelo"></a>
+                <p>
+                    Secador de Cabelo Mallory Travel 1500
+                </p>
+               <span><span class="simbolo">R$</span>100,00</span>
+            </div>
+            <!-- PRODUTO 6 -->
+            <div>
+                <a href="secadorTaiffProfissional/secadorTaiffProfissional.html" target="_self" rel="internal"><img id="secadorTaiffProfissional" src="imagens/secador-taiff-new-smart.jpeg" alt="secador de cabelo"></a>
+                <p>
+                    Secador de Cabelo Taiff New Smart
+                </p>
+               <span><span class="simbolo">R$</span>250,00</span>
+            </div>
+            <!-- PRODUTO 7 -->
+            <div>
+                <a href="maquinaCorteWahlClassicSeries/wahlClassicSeries.html" target="_self" rel="internal"><img id="wahlClassicSeries" src="imagens/Maquina Wahl Classic Series.jpeg" alt="maquina de corte"></a>
+                <p>
+                    Maquina de Corte Wahl Classic Series
+                </p>
+               <span><span class="simbolo">R$</span>250,00</span>
+            </div>
+            <!-- PRODUTO 8 -->
+            <div>
+                <a href="maquinaCorteCutAndDetail/wahlCutAndDetail.html" target="_self" rel="internal"><img id="wahlCutAndDetail" src="imagens/caixa-maquina de corte wahl cut and detail.jpeg" alt="maquina de corte"></a>
+                <p>
+                    Maquina de Corte Wahl Cut And Detail
+                </p>
+               <span><span class="simbolo">R$</span>250,00</span>
+            </div>
         </section>
     </main>
 
@@ -115,19 +155,18 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Ouvidoria</a></li>
-                    <li><a href="">Termos e políticas</a></li>
+                    <li><a href="../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../ouvidoria/ouvidoria.html">Ouvidoria</a></li>
+                    <li><a href="../termos&politicas/termosPolitica.html">Termos e políticas</a></li>
                     <li><a href="">Seriços/Atendimentos</a></li>
                     <li><a href="">Perguntas frequentes</a></li>
                 </ul>
             </div>
             <div class="redes-sociais">
                 <p>Para mais novidades, siga nossas redes sociais!</p>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-telegram"></i></a>
-                <a href=""><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/arkkiobrasil/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/arkkiobrasil"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://wa.me/5588992529288"><i class="fa fa-whatsapp"></i></a>
             <div>
         </section>
         <section class="copyright">
@@ -139,5 +178,11 @@
             <p>ARKKIO - CNPJ: 41.672.762/0001-11</p>
         </section>
     </footer>
+
+    <script>
+        function clicar(){
+            alert("A barra de pesquisa está indisponível no momento! Navegue pelas categorias no menu!")
+        }
+    </script>
 </body>
 </html>

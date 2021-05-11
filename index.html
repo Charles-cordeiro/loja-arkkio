@@ -32,12 +32,12 @@
                 <img src="imagens/logo-arkkio-oficial.png" alt="logo do site">
             </div>
             <div class="pesquisa">
-                <form action="#" method="POST">
-                    <input type="text" name="txtpesquisa" id="txtpesquisa" placeholder="Pesquise..." required>
+                <form action="#" method="GET">
+                    <input type="text" name="txtpesquisa" id="txtpesquisa" placeholder="Pesquise..." required onclick="clicar()">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
-            <div class="cadastro">
+            <div class="cadastro" onclick="cadastro()">
                 <label for="btnlogin">
                     <a class="desktop" href="loja-arkkio/login/login.html"><i class="fa fa-user-o"></i><input class="btnLogin" type="submit" value="LOGIN"></a>
                     <a class="mobile" href="loja-arkkio/cadastro/cadastro.html"><i class="fa fa-user-o"></i></a>
@@ -57,16 +57,16 @@
             <div class="sidebar">
                 <header>OPÇÕES</header>
                 <ul class="sidebar_lista">
-                    <li><a href="#"><i class="fa fa-qrcode fa-1.5x"></i>Home</a></li>
+                    <li><a href="index.html"><i class="fa fa-qrcode fa-1.5x"></i>Home</a></li>
                     <li><a href="#"><i class="fa fa-line-chart fa-1.5x"></i>Promoções</a></li>
-                    <li><a href="#"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
+                    <li><a href="loja-arkkio/sobre/sobre.html"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
                     <li><a href="#"><i class="fa fa-wrench fa-1.5x"></i>Serviços/Atendimentos</a></li>
                     <li><a href="#"><i class="fa fa-envelope fa-1.5x"></i>Contato</a></li>
                 </ul>
             </div>
             <div class="navbar">
                 <ul>
-                    <li><a href="#" target="_self" rel="internal">Eletrodomésticos</a></li>
+                    <li><a href="loja-arkkio/eletrodomesticos/eletrodomesticos.html" target="_self" rel="internal">Eletrodomésticos</a></li>
                     <li><a href="loja-arkkio/celulares/celulares.html" target="_self" rel="internal">Celulares</a></li>
                     <li><a href="loja-arkkio/beleza/beleza.html" target="_self" rel="internal">Beleza</a></li>
                     <li><a href="loja-arkkio/informatica/informatica.html" target="_self" rel="internal">Informática</a></li>
@@ -77,41 +77,69 @@
     </header>
     <main>
         <section class="banner">
-            <div class="gallery autoplay items-2" id="gallery">
+            <div class="gallery autoplay items-5" id="gallery">
                 <div id="item-1" class="control-operator"></div>
                 <div id="item-2" class="control-operator"></div>
+                <div id="item-3" class="control-operator"></div>
+                <div id="item-4" class="control-operator"></div>
+                <div id="item-5" class="control-operator"></div>
         
                 <figure class="item">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="imagens/banner-1-p.png" type="image/png">
-                        <source media="(max-width: 1000px)" srcset="imagens/banner-1-m.png" type="image/png">
+                        <source media="(max-width: 768px)" srcset="imagens/banner-1-mobile.png" type="image/png">
+                        <source media="(max-width: 1000px)" srcset="imagens/banner-1-1000.png" type="image/png">
+                        <source media="(max-width: 1200px)" srcset="imagens/banner-1-1200.png" type="image/png">
                         <img src="imagens/banner-1-g.png" alt="banner">
                     </picture>
                 </figure>
                 <figure class="item">
-                    <source media="(max-width: 768px)" srcset="imagens/banner-2-p.png" type="image/png">
-                    <source media="(max-width: 1000px)" srcset="imagens/banner-2-m.png" type="image/png">
-                    <img src="imagens/banner-2-g.jpg" alt="banner">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="imagens/banner-2-p.svg" type="image/png">
+                        <img src="imagens/banner-2-g.png" alt="banner">
+                    </picture>
                 </figure>
-        
+                <figure class="item">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="imagens/banner-3-p.svg" type="image/png" class="img-mobile">
+                        <img src="imagens/banner-3-g.png" alt="banner">
+                    </picture>
+                </figure>
+                <figure class="item">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="imagens/banner-4-p.png" type="image/png">
+                        <source media="(max-width: 768px)" srcset="imagens/banner-4-m.png" type="image/png">
+                        <img src="imagens/banner-4-g.png" alt="banner">
+                    </picture>
+                </figure>
+                <figure class="item">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="imagens/banner-5-p.svg" type="image/png">
+                        <img src="imagens/banner-5-g.png" alt="banner">
+                    </picture>
+                </figure>
+                
                 <div class="controls">
                     <a href="#item-1" class="control-button"><i class="fa fa-circle"></i></a>
                     <a href="#item-2" class="control-button"><i class="fa fa-circle"></i></a>
+                    <a href="#item-3" class="control-button"><i class="fa fa-circle"></i></a>
+                    <a href="#item-4" class="control-button"><i class="fa fa-circle"></i></a>
+                    <a href="#item-5" class="control-button"><i class="fa fa-circle"></i></a>
                 </div>
             </div>
         </section>
         <section class="introducao">
-            <p>Olá, seja bem vindo a loja online do grupo Arkkio, aqui você vai encontrar os melhores eletrodomésticos, celulares, produtos de beleza e muitos mais com o melhor preço da região!</p>
+            <p>Olá, seja bem vindo a loja online do grupo Arkkio, aqui você vai encontrar os melhores eletrodomésticos, celulares, produtos de beleza e muitos mais com o melhor preço de Viçosa do Ceará!</p>
         </section>
         <section>
             <div class="about">
                 <div>
                     <i id="icone1" class="fa fa-car"></i>
-                    <p>FRETE GRÁTIS PARA VIÇOSA DO CEARÁ</p>
+                    <p>ENTREGA GRÁTIS E APENAS PARA VIÇOSA DO CEARÁ</p>
                 </div>
                 <div>
                     <i id="icone2" class="fa fa-calendar"></i>
-                    <p>ENTREGA NO MESMO DIA DA COMPRA</p>
+                    
+                    <p>ENTREGA EM 24 HORAS APÓS A COMPRA</p>
                 </div>
                 <div>
                     <i id="icone3" class="fa fa-database"></i>
@@ -124,21 +152,21 @@
             </div>
         </section>
         <section class="secao_produtos">
-            <a href="#">
+            <a href="loja-arkkio/conteudo_body/digital/digital.html">
                 <div class="celular">
                     <img src="imagens/background-celular.jpg" alt="" width="350px" height="410px">
                     <p>O melhor do mundo digital, aqui!</p>
                 </div>
             </a>
-            <a href="#">
+            <a href="loja-arkkio/eletrodomesticos/eletrodomesticos.html">
                 <div class="eletrodomesticos">
                     <img src="imagens/background-eletrodomesticos.jpg" alt="" width="350px" height="410px">
                     <p>Encontre seu novo eletrodoméstico!</p>
                 </div>
             </a>
-            <a href="#">
+            <a href="loja-arkkio/beleza/beleza.html">
                 <div class="beleza">
-                    <img src="imagens/background-beleza.jpg" alt="" width="350px" height="410px">
+                    <img id="imagem-beleza" src="imagens/background-beleza.jpg" alt="" width="350px" height="410px">
                     <p>Dê um up no visual, melhores produtos de beleza!</p>
                 </div>
             </a>
@@ -152,29 +180,39 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Ouvidoria</a></li>
-                    <li><a href="">Termos e políticas</a></li>
+                    <li><a href="loja-arkkio/sobre/sobre.html">Sobre</a></li>
+                    <li><a href="loja-arkkio/ouvidoria/ouvidoria.html">Ouvidoria</a></li>
+                    <li><a href="loja-arkkio/termos&politicas/termosPolitica.html">Termos e políticas</a></li>
                     <li><a href="">Serviços/Atendimentos</a></li>
                     <li><a href="">Perguntas frequentes</a></li>
                 </ul>
             </div>
             <div class="redes-sociais">
                 <p>Para mais novidades, siga nossas redes sociais!</p>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-telegram"></i></a>
-                <a href=""><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/arkkiobrasil/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/arkkiobrasil"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://wa.me/5588992529288"><i class="fa fa-whatsapp"></i></a>
             <div>
         </section>
         <section class="copyright">
             <div class="copy">
-                <p>Todos os direitos reservados ao grupo Arkkio &copy;. Site construido por <a href="https://erickbalbino.github.io/portfolio-atualizado">Erick Systems</a> 2021.</p>
+                <p>Todos os direitos reservados ao grupo Arkkio &copy;. Site construido por <a href="https://erickbalbino.github.io/portfolio">Erick Systems</a> 2021.</p>
             </div>
         </section>
         <section class="cnpj">
             <p>ARKKIO - CNPJ: 41.672.762/0001-11</p>
         </section>
+        <section>
+            <a href="https://wa.me/5588992529288"><img id="icone-whats" src="imagens/whatsapp.png" alt="icone do whatsapp"></a>
+        </section>
     </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        function clicar(){
+            alert("A barra de pesquisa está indisponível no momento! Navegue pelas categorias no menu!");
+        }
+    </script>
 </body>
 </html>

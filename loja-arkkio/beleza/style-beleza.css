@@ -278,6 +278,27 @@ main .subtitulo{
 #pranchaTaiff{
     margin-top: 63px;
 }
+#secadorGamaLight{
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+#secadorMalloryTravel{
+    width: 160px;
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+#secadorTaiffProfissional{
+    margin-top: 85px;
+    margin-bottom: 10px;
+}
+#wahlClassicSeries{
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+#wahlCutAndDetail{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
 /* Apenas para preenchimento */
 /* FOOTER */
 .rodape{
@@ -474,7 +495,7 @@ main .subtitulo{
         padding: 0px 5px 50px 8px;
     }
     main .secao_produtos div img{
-        width: 120px;
+        width: 160px;
     }
     main .secao_produtos div .mobile{
         display: flex;

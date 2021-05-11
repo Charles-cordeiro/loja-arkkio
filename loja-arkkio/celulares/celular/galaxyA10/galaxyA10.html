@@ -56,14 +56,14 @@
                 <ul class="sidebar_lista">
                     <li><a href="../../../../index.html"><i class="fa fa-qrcode fa-1.5x"></i>Home</a></li>
                     <li><a href="#"><i class="fa fa-line-chart fa-1.5x"></i>Promoções</a></li>
-                    <li><a href="#"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
+                    <li><a href="../../../sobre/sobre.html"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
                     <li><a href="#"><i class="fa fa-wrench fa-1.5x"></i>Serviços/Atendimentos</a></li>
                     <li><a href="#"><i class="fa fa-envelope fa-1.5x"></i>Contato</a></li>
                 </ul>
             </div>
             <div class="navbar">
                 <ul>
-                    <li><a href="#" target="_self" rel="internal">Eletrodomésticos</a></li>
+                    <li><a href="../../../eletrodomesticos/eletrodomesticos.html" target="_self" rel="internal">Eletrodomésticos</a></li>
                     <li><a href="../../celulares.html" target="_self" rel="internal">Celulares</a></li>
                     <li><a href="../../../beleza/beleza.html" target="_self" rel="internal">Beleza</a></li>
                     <li><a href="../../../informatica/informatica.html" target="_self" rel="internal">Informática</a></li>
@@ -75,23 +75,19 @@
 
     <main>
         <section class="secao_produto">
-            <div class=" opcao">
-                <img id="azul" src="galaxy-a10s.jpeg" alt="" onclick="mudarCorAzul()">
-                <img id="vermelho" src="galaxya10s-vermelho.jpeg" alt="" onclick="mudarCorVermelha()">
-            </div>
             <div class="img">
                 <img id="img" src="galaxy-a10s.jpeg" alt="celular galaxy a10">
             </div>
             <div class="comprar">
                 <div class="about">
                     <p>Smartphone Samsumg Galaxy A10s, 32GB, Dual, Tela de 6.2", Camêra de 13MP...</p>
-                    <span><span class="txt">Por:</span><span class="simbolo">R$</span>150,00</span>
+                    <span><span class="txt">Por:</span><span class="simbolo">R$</span>1500,00</span>
                 </div>
                 <div class="estoque">
-                    <p>Indisponível no momento<i class="fa fa-"></i></p>
+                    <p id="txtestoque">Em estoque</p>
                 </div>
                 <div class="btncomprar">
-                    <i class="fa fa-cart-plus"></i><a href="#"><input type="submit" value="Comprar Agora"></a>
+                    <i class="fa fa-cart-plus"></i><a href="https://arkkio.samcart.com/products/smartphone-samsung-galaxy-a10s"><input id="btncomprar" type="submit" value="Comprar Agora"></a>
                 </div>  
                 <div class="informacoes">
                     <div class="item">
@@ -105,7 +101,7 @@
                     <div class="item-txt">
                         <p>Samsung</p>
                         <p>32 GB</p>
-                        <p>Azul e Vermelho</p>
+                        <p>Azul</p>
                         <p>6.2 Polegadas</p>
                         <p>Android 10.0</p>
                         <p>2 GB</p>
@@ -171,19 +167,18 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Ouvidoria</a></li>
-                    <li><a href="">Termos e políticas</a></li>
+                    <li><a href="../../../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../../../ouvidoria/ouvidoria.html">Ouvidoria</a></li>
+                    <li><a href="../../../termos&politicas/termosPolitica.html">Termos e políticas</a></li>
                     <li><a href="">Serviços/Atendimentos</a></li>
                     <li><a href="">Perguntas frequentes</a></li>
                 </ul>
             </div>
             <div class="redes-sociais">
                 <p>Para mais novidades, siga nossas redes sociais!</p>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-telegram"></i></a>
-                <a href=""><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/arkkiobrasil/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/arkkiobrasil"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://wa.me/5588992529288"><i class="fa fa-whatsapp"></i></a>
             <div>
         </section>
         <section class="copyright">
@@ -196,6 +191,18 @@
         </section>
     </footer>
 
+    <!-- CONTROLE DO ESTOQUE -->
+    <script>
+        const quant = 0;
+        if(quant==0){
+            var btn = document.getElementById("btncomprar");
+            var txt = document.getElementById("txtestoque");
+            btn.style.display="none";
+            txt.innerHTML = `Indisponível no momento!`
+            txt.style.color = "#f00";
+            txt.style.fontWeight = "600";
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

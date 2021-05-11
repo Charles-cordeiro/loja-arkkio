@@ -56,14 +56,14 @@
                 <ul class="sidebar_lista">
                     <li><a href="../../../../index.html"><i class="fa fa-qrcode fa-1.5x"></i>Home</a></li>
                     <li><a href="#"><i class="fa fa-line-chart fa-1.5x"></i>Promoções</a></li>
-                    <li><a href="#"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
+                    <li><a href="../../../sobre/sobre.html"><i class="fa fa-question-circle fa-1.5x"></i>Sobre</a></li>
                     <li><a href="#"><i class="fa fa-wrench fa-1.5x"></i>Serviços/Atendimentos</a></li>
                     <li><a href="#"><i class="fa fa-envelope fa-1.5x"></i>Contato</a></li>
                 </ul>
             </div>
             <div class="navbar">
                 <ul>
-                    <li><a href="#" target="_self" rel="internal">Eletrodomésticos</a></li>
+                    <li><a href="../../../eletrodomesticos/eletrodomesticos.html" target="_self" rel="internal">Eletrodomésticos</a></li>
                     <li><a href="../../celulares.html" target="_self" rel="internal">Celulares</a></li>
                     <li><a href="../../../beleza/beleza.html" target="_self" rel="internal">Beleza</a></li>
                     <li><a href="../../../informatica/informatica.html" target="_self" rel="internal">Informática</a></li>
@@ -83,11 +83,11 @@
                     <p>Smartphone Samsung Galaxy A01 Core, 32GB, Tela de 5.3", Camera de 8MP Preto...</p>
                     <span><span class="txt">Por:</span><span class="simbolo">R$</span>1.200,00</span>
                 </div>
-                <div class="estoque">
+                <div class="estoque" id="estoque">
                     <p>Em estoque</p>
                 </div>
                 <div class="btncomprar">
-                    <i class="fa fa-cart-plus"></i><a href="#"><input type="submit" value="Comprar Agora"></a>
+                    <i class="fa fa-cart-plus"></i><a href="https://arkkio.samcart.com/products/galaxy-a01"><input id="btncomprar" type="submit" value="Comprar Agora"></a>
                 </div>  
                 <div class="informacoes">
                     <div class="item">
@@ -134,7 +134,7 @@
                 <div class="galaxya10">
                     <a href="../galaxyA10/galaxyA10.html"><img id="galaxya10" src="../../imagens/galaxy-a10s.jpeg" alt=""></a>
                     <p>Samsung Galaxy A10s</p>
-                    <p><span>R$ 150,00</span>
+                    <p><span>R$ 1.500,00</span>
                 </div>
                 <div class="lg41s">
                     <a href="../lgK41S/lgk41s.html"><img id="lg41s" src="../../imagens/lg-41s-preto.jpeg" alt=""></a>
@@ -168,19 +168,18 @@
             </div>
             <div class="links">
                 <ul>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Ouvidoria</a></li>
-                    <li><a href="">Termos e políticas</a></li>
+                    <li><a href="../../../sobre/sobre.html">Sobre</a></li>
+                    <li><a href="../../../ouvidoria/ouvidoria.html">Ouvidoria</a></li>
+                    <li><a href="../../../termos&politicas/termosPolitica.html">Termos e políticas</a></li>
                     <li><a href="">Serviços/Atendimento</a></li>
                     <li><a href="">Perguntas frequentes</a></li>
                 </ul>
             </div>
             <div class="redes-sociais">
                 <p>Para mais novidades, siga nossas redes sociais!</p>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-telegram"></i></a>
-                <a href=""><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/arkkiobrasil/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/arkkiobrasil"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://wa.me/5588992529288"><i class="fa fa-whatsapp"></i></a>
             <div>
         </section>
         <section class="copyright">
@@ -192,5 +191,18 @@
             <p>ARKKIO - CNPJ: 41.672.762/0001-11</p>
         </section>
     </footer>
+
+    <!-- CONTROLE DE ESTOQUE -->
+    <script>
+        const quant = 1;
+        if (quant == 0){
+            var btn = document.getElementById("btncomprar");
+            btn.style.display = "none";
+            var txt = document.getElementById("estoque");
+            txt.innerHTML = "Indisponível no momento";
+            txt.style.fontWeight = "600";
+            txt.style.color = "#f00";
+        }
+    </script>
 </body>
 </html>

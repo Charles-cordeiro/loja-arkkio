@@ -223,6 +223,90 @@ label #cancel{
     height: 300px;
     object-fit: cover;
 }
+.banner h2{
+    display: inline-block;
+    transform: translate(20px, -100px);
+    background-color: #3d3d3d64;
+    padding: 20px 40px;
+    color: #eee;
+    border-radius: 20px;
+}
+.cadastro-secao{
+    padding: 100px 50px;
+    display: flex;
+}
+.cadastro-header{
+    width: 50%;
+}
+.cadastro-header h2{
+    font-family: 'Space Mono', monospace;
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+}
+.cadastro-header p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    padding: 0px 10px;
+}
+.cadastro-form{
+    background-color: #eb5c5a;
+    padding: 0px 40px 100px 40px;
+    margin-left: 100px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+.cadastro-form header{
+    color: #fff;
+    padding: 60px 0px 40px 0px;
+    font-size: 1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cadastro-form label{
+    display: block;
+}
+.cadastro-form label input{
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.cadastro-form label input:focus{
+    outline: none;
+}
+.cadastro-form input[type="submit"]{
+    padding: 15px;
+    margin: auto;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.05rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fa605d;
+    box-shadow: 4px 4px 10px #aa444338;
+}
+.cadastro-form input[type="submit"]:hover{
+    cursor: pointer;
+    filter: brightness(105%);
+}
+.cadastro-form p{
+    padding-top: 40px;
+    color: #fff;
+    font-size: 1.05rem;
+}
+.cadastro-form p a{
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.05rem;
+}
+#txtemail{
+    margin-top: 15px;
+}
+#txtpass{
+    margin-top: 15px;
+}
+
 /* FOOTER */
 .rodape{
     display: flex;
@@ -403,6 +487,46 @@ label #cancel{
     .banner img{
         height: 150px;
     }
+    .banner h2{
+        font-size: 1.15rem;
+        padding: 10px 20px;
+        transform: translate(10px, -80px);
+    }
+    .cadastro-header{
+        width: 100%;
+    }
+    .cadastro-header h2{
+        padding: 10px 10px;
+        font-size: 2rem;
+    }
+    .cadastro-secao{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .cadastro-form{
+        margin: 0px;
+        padding: 10px;
+        margin: 100px 10px 40px 10px;
+    }
+    .cadastro-form header{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .cadastro-form label{
+        padding: 0px 10px 0px 20px;
+    }
+    .cadastro-form label input{
+        width: 80%;
+        font-size: 1.05rem;
+    }
+    #inputSubmit{
+        margin-left: 20px;
+    }
+    .cadastro-form p{
+        padding-bottom: 20px;
+        text-align: center;
+    }
     /* RODAPE */
     .rodape{
         flex-direction: column;
@@ -431,7 +555,7 @@ label #cancel{
     }
     .copyright .copy p{
         text-align: center;
-        padding: 25px 10px 0px 10px;
+        padding: 15px 10px 0px 10px;
         font-size: 1.05rem;
     }
 }
