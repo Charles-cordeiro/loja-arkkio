@@ -229,77 +229,29 @@ main .subtitulo{
     font-size: 1rem;
     font-weight: 600;
 }
-.secao_produtos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 40px 0px;
-}
-.secao_produtos div{
-    width: 350px;
-    height: 320px;
-    margin: auto;
+.secao_categorias{
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #fa605d;
+    margin: 10px 0px 50px 0px;
 }
-.secao_produtos div img{
-    display: flex;
-    width: 200px;
-    margin: auto;
-    height: auto;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-.secao_produtos div img:hover{
-    transform: scale(1.03);
-}
-.secao_produtos p{
-    line-height: 1.5;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-}
-.secao_produtos span{
-    color: #a28a02;
+.btncategoria{
+    width: 90%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    margin-left: 50px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
     font-size: 1.1rem;
+    text-align: left;
+    font-family: 'Cairo', sans-serif;
+    cursor: pointer;
 }
-.secao_produtos div span span{
-    font-size: 1.2rem;
+.secao_categorias i{
+    font-size: 2rem;
+    opacity: 0.5;
+    transform: translate(-30px, 5px);
 }
-/* Apenas para preenchimento */
-#pranchaGamaItaly{
-    margin-top: 40px;
-}
-#pranchaMalloryDivinis{
-    margin-top: 50px;
-}
-#pranchaTaiff{
-    margin-top: 63px;
-}
-#secadorGamaLight{
-    margin-top: 80px;
-    margin-bottom: 10px;
-}
-#secadorMalloryTravel{
-    width: 160px;
-    margin-top: 75px;
-    margin-bottom: 10px;
-}
-#secadorTaiffProfissional{
-    margin-top: 85px;
-    margin-bottom: 10px;
-}
-#wahlClassicSeries{
-    margin-top: 90px;
-    margin-bottom: 15px;
-}
-#wahlCutAndDetail{
-    margin-top: 70px;
-    margin-bottom: 10px;
-}
-/* Apenas para preenchimento */
 /* FOOTER */
 .rodape{
     display: flex;
@@ -379,8 +331,10 @@ main .subtitulo{
 .cnpj{
     background-color: #f5f5f5;
     padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
 }
-.cnpj p{
+.cnpj div p{
     padding: 0px 10px;
     font-size: 0.9rem;
     font-family: 'Times New Roman', Times, serif;
@@ -475,32 +429,18 @@ main .subtitulo{
         display: none;
     }
     /* MAIN */
-    main .secao_produtos{
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-    main .secao_produtos div{
-        display: flex;
-        width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: space-around;
-        width: 300px;
-    }
     main h1{
         font-size: 2rem;
         padding: 20px 5px 0px 5px;
     }
     main .subtitulo{
-        padding: 0px 5px 50px 8px;
+        padding: 0px 5px 20px 8px;
     }
-    main .secao_produtos div img{
-        width: 160px;
+    .secao_categorias{
+        margin-bottom: 50px;
     }
-    main .secao_produtos div .mobile{
-        display: flex;
-        font-size: 1rem;
-        text-align: center;
+    .btncategoria{
+        margin-left: 10px;
     }
     /* RODAPE */
     .rodape{
@@ -534,13 +474,10 @@ main .subtitulo{
         font-size: 1.05rem;
     }
     .cnpj{
-        background-color: #f5f5f5;
-        padding: 10px 0px;
+        flex-direction: column;
     }
-    .cnpj p{
-        padding: 0px 10px;
-        font-size: 0.9rem;
-        font-family: 'Times New Roman', Times, serif;
+    .endereco{
+        padding-top: 5px;
     }
 }
 

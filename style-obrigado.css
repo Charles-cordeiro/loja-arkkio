@@ -1,0 +1,82 @@
+/* RESET SIMPLES */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #cf4e4c;
+}
+
+/* MAIN */
+body{
+    background-color: #f5f6f8;
+}
+main h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 20px;
+}
+main h1 i{
+    color: #008000;
+}
+main h2{
+    padding: 0px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ol{
+    padding: 20px 10px;
+    list-style-position: inside;
+}
+ol li{
+    line-height: 1.5;
+    padding-top: 5px; 
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.subtitulo-botoes{
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+.BTNs{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    width: 230px;
+    font-size: 1.3rem;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px 0px 50px 0px;
+}
+button i{
+    padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+    main h1{
+        font-size: 2.2rem;
+        padding-bottom: 50px;
+    }
+    main h2{
+        font-size: 1.2rem;
+    }
+    ol li{
+        font-size: 1.1rem;
+    }
+    .BTNs{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    button{
+        font-size: 1.1rem;
+        margin: 15px;
+    }
+}
